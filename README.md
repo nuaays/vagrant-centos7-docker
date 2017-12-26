@@ -14,7 +14,7 @@ vagrant halt
 vagrant package ( vagrant package --output=centos7-docker.box )
 
 mv package.box centos7-docker.box
-vagrant box add --name centos7-docker centos7-docker.box
+vagrant box add --force --name=centos7-docker centos7-docker.box
 ```
 
 ## Vagrantfile
