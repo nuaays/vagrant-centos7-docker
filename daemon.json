@@ -1,0 +1,30 @@
+{
+    "hosts": [
+        "tcp://0.0.0.0:2375",
+        "unix:///var/run/docker.sock"
+     ],
+    "debug": true,
+    "log-driver": "json-file",
+    "log-level": "debug",
+    "experimental": true,
+    "metrics-addr": "0.0.0.0:1337",
+    "selinux-enabled": false,
+    "registry-mirrors": [
+        "http://138f94c6.m.daocloud.io",
+        "https://olzwzeg2.mirror.aliyuncs.com",
+        "https://ip2y4bft.mirror.aliyuncs.com"
+    ],
+    "insecure-registries":[
+        "gcr.io",
+        "quay.io",
+        "registry.cn-hangzhou.aliyuncs.com",
+        "senyang.com:5000"
+    ],
+    "exec-opts": [
+        "native.cgroupdriver=cgroupfs"
+    ],
+    "graph": "/localdisk/docker/graph",
+    "storage-driver": "overlay2",
+    "storage-opts": [ "overlay2.override_kernel_check=true" ],
+    "live-restore": true
+}
