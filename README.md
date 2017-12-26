@@ -1,4 +1,8 @@
 # vagrant-centos7-docker
+```bash
+centos7
+docker17.09.1
+```
 
 ## make a box based on centos7.box
 ```bash
